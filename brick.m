@@ -13,7 +13,7 @@ A = [0 1
 B = [0
      1];
  
-IC=[5 -5]'; %initial conditions
+IC=[5 5]'; %initial conditions
 
 %use matlab 'ss' function to define the brick system using standard
 %(the global variables are set up for standard x_dot=Ax+Bu notation)
@@ -63,7 +63,7 @@ Q = .25 * eye(2);
 R = 10;
 
 [K, S] = lqr(A, B, Q, R);
-u = -K*x;
+u = -K*x
 
 end
 
